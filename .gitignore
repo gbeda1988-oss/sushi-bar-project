@@ -1,0 +1,48 @@
+# =========================
+# Python / Django
+# =========================
+
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+
+.env
+.env.*
+
+media/
+staticfiles/
+
+# =========================
+# Node / React
+# =========================
+
+frontend/node_modules/
+frontend/build/
+
+# если frontend в корне:
+node_modules/
+build/
+
+# =========================
+# VS Code
+# =========================
+
+.vscode/
+.idea/
+
+# =========================
+# OS files
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+
+*.log
