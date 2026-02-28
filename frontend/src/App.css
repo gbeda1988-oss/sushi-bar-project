@@ -1,0 +1,113 @@
+/* ===== PREMIUM DARK GRADIENT (GLOBAL) ===== */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(circle at 20% 10%, rgba(255, 0, 0, 0.12), transparent 40%),
+              radial-gradient(circle at 80% 30%, rgba(255, 0, 0, 0.08), transparent 45%),
+              linear-gradient(135deg, #0b0b0b 0%, #141414 45%, #0b0b0b 100%);
+  color: #ffffff;
+}
+
+/* Bootstrap containers should NOT paint white */
+.container, .container-fluid {
+  background: transparent !important;
+}
+
+/* ===== NAVBAR (GLASS) ===== */
+
+.navbar {
+  background: rgba(20, 20, 20, 0.65) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ===== CARDS (GLASS) ===== */
+
+.card {
+  background: rgba(18, 18, 18, 0.78) !important;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.06) !important;
+  border-radius: 18px !important;
+  color: #ffffff !important;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(255, 0, 0, 0.22);
+}
+
+/* ===== TEXT ===== */
+
+.text-muted {
+  color: rgba(255,255,255,0.65) !important;
+}
+
+/* ===== BUTTONS ===== */
+
+.btn-danger {
+  background: linear-gradient(45deg, #b30000, #ff1a1a) !important;
+  border: none !important;
+  border-radius: 10px !important;
+  color: #fff !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-danger:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 22px rgba(255, 0, 0, 0.45);
+}
+
+.btn-outline-light {
+  border-radius: 10px !important;
+  border-color: rgba(255,255,255,0.75) !important;
+  color: #fff !important;
+}
+
+.btn-outline-light:hover {
+  background: rgba(255, 0, 0, 0.35) !important;
+  border-color: rgba(255, 0, 0, 0.65) !important;
+}
+
+/* Категории — серые, но не прозрачные */
+.btn-secondary {
+  background: rgba(70, 70, 70, 0.55) !important;
+  border: 1px solid rgba(255,255,255,0.14) !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 0, 0, 0.45) !important;
+  border-color: rgba(255, 0, 0, 0.55) !important;
+}
+
+/* ===== CART (FORCED DARK) ===== */
+
+.cart-container {
+  background: rgba(12, 12, 12, 0.82) !important;
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 18px;
+  border: 1px solid rgba(255,255,255,0.06);
+  color: #fff !important;
+}
+
+/* ВАЖНО: list-group-item по умолчанию белый -> принудительно делаем тёмным */
+.cart-container .list-group-item {
+  background: rgba(25, 25, 25, 0.65) !important;
+  color: #fff !important;
+  border-color: rgba(255,255,255,0.08) !important;
+}
+
+/* Красная плашка количества */
+.badge-cart {
+  background: #ff1a1a;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: #fff;
+}
